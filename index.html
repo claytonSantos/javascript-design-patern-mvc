@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cat Clicker</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<meta name="theme-color" content="#EA2663">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<title>Cat Clicker</title>
+		<link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <ul id="cat-list"></ul>
-    <div id="cat">
-        <h2 id="cat-name"></h2>
-        <div id="cat-count"></div>
-        <img id="cat-img" src="" alt="cute cat">
-    </div>
-    <script src="js/app.js"></script>
+		<div class="container">
+		<header><h1>Javascript Pattern - Mvc</h1></header>
+			<section>
+				<ul id="cat-list"></ul>
+				<div id="cat">
+					<h2 id="cat-name"></h2>
+					<div class="cat-count-block">
+						Curtidas: <span id="cat-count"></span>
+					</div>
+					<img id="cat-img" src="" alt="cute cat">
+				</div>
+			</section>
+			<aside>
+				<p class="btn btn-admin">Admin</p>
+				<div class="controls">
+					<div class="controls-item">name:<input class="controls-name" type="text"></div>
+					<div class="controls-item">url:<input class="controls-url" type="text"></div>
+					<div class="controls-item">clicks:<input class="controls-clicks" type="text"></div>
+				</div>
+				<span><p class="btn btn-save">Save</p></span>
+				<span><p class="btn btn-cancel">Cancel</p></span>
+			</aside>
+		</div>
+		<script async e defer src="js/app.js"></script>
 </body>
 </html>
